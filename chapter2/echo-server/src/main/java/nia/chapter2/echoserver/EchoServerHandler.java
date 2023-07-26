@@ -10,13 +10,19 @@ import io.netty.util.CharsetUtil;
 
 /**
  * @program: netty-test
- * @description:
+ * @description: 业务逻辑处理
  * @author: zzk
  * @create: 2020-09-22
  */
 @ChannelHandler.Sharable
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {
 
+    /**
+     * 读取请求
+     * @param ctx
+     * @param msg
+     * @throws Exception
+     */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ByteBuf in = (ByteBuf) msg;
@@ -24,12 +30,23 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
         ctx.write(in);
     }
 
+    /**
+     * 请求读取结束
+     * @param ctx
+     * @throws Exception
+     */
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         ctx.writeAndFlush(Unpooled.EMPTY_BUFFER)
                 .addListener(ChannelFutureListener.CLOSE);
     }
 
+    /**
+     * 异常处理
+     * @param ctx
+     * @param cause
+     * @throws Exception
+     */
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         cause.printStackTrace();

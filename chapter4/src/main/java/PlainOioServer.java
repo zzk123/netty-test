@@ -6,7 +6,7 @@ import java.nio.charset.Charset;
 
 /**
  * @program: netty-test
- * @description:
+ * @description: 阻塞网络编程
  * @author: zzk
  * @create: 2020-09-24
  */
@@ -23,6 +23,7 @@ public class PlainOioServer {
             for(;;){
                 final Socket clientSocket = socket.accept();
                 System.out.println("Accepted connection from " + clientSocket);
+                //创建一个线程处理连接事件
                 new Thread(new Runnable() {
                     @Override
                     public void run() {

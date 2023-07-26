@@ -12,7 +12,7 @@ import java.net.InetSocketAddress;
 
 /**
  * @program: netty-test
- * @description:
+ * @description:  Echo客户端
  * @author: zzk
  * @create: 2020-09-22
  */
@@ -27,6 +27,10 @@ public class EchoClient {
         this.port = port;
     }
 
+    /**
+     * 引导启动
+     * @throws Exception
+     */
     public void start() throws Exception{
         EventLoopGroup group = new NioEventLoopGroup();
         try{
@@ -35,7 +39,7 @@ public class EchoClient {
                     .channel(NioSocketChannel.class)
                     .remoteAddress(new InetSocketAddress(host, port))
                     .handler(new ChannelInitializer<SocketChannel>(){
-
+                        //业务逻辑处理
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast(new EchoClientHandler());
@@ -44,18 +48,14 @@ public class EchoClient {
             ChannelFuture f = b.connect().sync();
             f.channel().closeFuture().sync();
         }finally {
+            //关闭线程池释放所有资源
             group.shutdownGracefully().sync();
         }
     }
 
     public static void main(String[] args) throws Exception {
-        if(args.length != 2){
-            System.err.println("Usage:" + EchoClient.class.getSimpleName() + "<host><port>");
-            return;
-        }
-
-        final String host = args[0];
-        final int port = Integer.parseInt(args[1]);
+        final String host = "127.0.0.1";
+        final int port = 9090;
         new EchoClient(host, port).start();
     }
 }

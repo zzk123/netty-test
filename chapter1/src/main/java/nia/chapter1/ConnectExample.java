@@ -1,16 +1,16 @@
 package nia.chapter1;
-
+import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
+import io.netty.channel.EventLoopGroup;
+import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
-
-import io.netty.channel.Channel;
 
 import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
-
 /**
  * @program: netty-test
  * @description:
@@ -22,9 +22,11 @@ public class ConnectExample {
     private static final Channel CHANNEL_FROM_SOMEWHERE = new NioSocketChannel();
 
     public static void connect(){
-        Channel channel = CHANNEL_FROM_SOMEWHERE;
+        EventLoopGroup group = new NioEventLoopGroup();
+        Bootstrap b = new Bootstrap();
+        b.group(group).channel(NioSocketChannel.class).handler(new ConnectHandler());
         //异步连接到远程节点
-        final ChannelFuture future = channel.connect( new InetSocketAddress("192.168.0.1",25));
+        final ChannelFuture future = b.connect( new InetSocketAddress("127.0.0.1",25));
         //注册监听以便在操作完成时获取通知
         future.addListener(new ChannelFutureListener() {
             @Override
@@ -38,6 +40,9 @@ public class ConnectExample {
                 }
             }
         });
+    }
 
+    public static void main(String[] args) throws Exception {
+        ConnectExample.connect();
     }
 }

@@ -50,12 +50,8 @@ public class LogEventMonitor {
     }
 
     public static void main(String[] args) throws Exception {
-        if(args.length != 1){
-            throw new IllegalArgumentException(
-                    "Usage: LogEventMonitor <port>");
-        }
         LogEventMonitor monitor = new LogEventMonitor(
-                new InetSocketAddress(Integer.parseInt(args[0]))
+                new InetSocketAddress(8888)
         );
         try{
             Channel channel = monitor.bind();

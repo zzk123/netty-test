@@ -32,12 +32,14 @@ public class PlainNioServer {
         serverChannel.register(selector, SelectionKey.OP_ACCEPT);
         final ByteBuffer msg = ByteBuffer.wrap("Hi\r\n".getBytes());
         for(;;){
+            //等待需要处理的新事件，阻塞将一直持续到下一个传入事件
             try{
                 selector.select();
             }catch (IOException ex){
                 ex.printStackTrace();
                 break;
             }
+            //接收所有事件
             Set<SelectionKey> readKeys = selector.selectedKeys();
             Iterator<SelectionKey> iterator = readKeys.iterator();
             while(iterator.hasNext()){

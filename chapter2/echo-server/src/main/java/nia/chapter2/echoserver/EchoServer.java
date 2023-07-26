@@ -30,7 +30,7 @@ public class EchoServer {
         final EchoServerHandler serverHandler = new EchoServerHandler();
         EventLoopGroup group = new NioEventLoopGroup();
         try{
-            ServerBootstrap b = new ServerBootstrap();
+            ServerBootstrap b =  new ServerBootstrap();
             b.group(group)
                     .channel(NioServerSocketChannel.class)
                     .localAddress(new InetSocketAddress(port))
@@ -50,11 +50,7 @@ public class EchoServer {
     }
 
     public static void main(String[] args) throws Exception {
-        if(args.length != 1){
-            System.err.println("Usage:" + EchoServer.class.getSimpleName() + "<port>");
-            return;
-        }
-        int port = Integer.parseInt(args[0]);
+        int port = Integer.parseInt("9090");
         new EchoServer(port).start();
     }
 }

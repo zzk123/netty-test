@@ -15,6 +15,11 @@ import java.net.Socket;
  */
 public class BlockingIoExample {
 
+    /**
+     * 服务端代码
+     * @param portNumber
+     * @throws IOException
+     */
     public void serve(int portNumber) throws IOException{
         //创建一个新的ServerSocket用以监听指定端口上的连接请求
         ServerSocket serverSocket = new ServerSocket(portNumber);
@@ -25,15 +30,24 @@ public class BlockingIoExample {
         PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
         String request, response;
         while((request = in.readLine()) != null){
-            if("Done".equals(request)){
-                break;
-            }
+            //客户端返回 done 关闭连接
             response = processRequest(request);
             out.println(response);
         }
     }
 
+    /**
+     * 响应字符
+     * @param request
+     * @return
+     */
     private String processRequest(String request){
         return "Processed";
+    }
+
+    public static void main(String[] args) throws Exception {
+        BlockingIoExample example = new BlockingIoExample();
+        example.serve(25 );
+
     }
 }
