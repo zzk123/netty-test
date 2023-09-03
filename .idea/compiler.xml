@@ -22,5 +22,8 @@
         <module name="chapter11" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter4" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
