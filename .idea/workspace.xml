@@ -23,17 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="040a3df3-91b2-4235-854e-f739a8bcf52b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/delimeiterBased/EchoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/fixedLengthFrame/EchoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/http/HttpFileServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/http/HttpFileServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/webSocket/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/webSocket/WebSocketServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/main/proto/address.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/test/java/javanoio/netty/http/protobuf/AddressBookProtos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/other/src/test/java/javanoio/netty/http/protobuf/protobufTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/file/FileServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/file/FileServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/buffer/ChannelBufferByteInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/buffer/ChannelBufferByteOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/endecoder/NettyMessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/endecoder/NettyMessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/heartbeat/HeartBeatReqHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/heartbeat/HeartBeatRespHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/login/LoginAuthReqHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/login/LoginAuthRespHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/utils/GsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/vo/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/vo/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/vo/NettyConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/privateAggreement/vo/NettyMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/udpdemo/ChineseProverbClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/udpdemo/ChineseProverbClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/udpdemo/ChineseProverbServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/src/main/java/javanoio/netty/udpdemo/ChineseProverbServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/ChatServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/ChatServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/ChatServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/ChatServerInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/ChatServerInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/HttpRequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/HttpRequestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/SecureChatServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/SecureChatServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/SecureChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/SecureChatServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/SecureChatServerInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/SecureChatServerInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/TextWebSocketFrameHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/target/classes/nia/chapter12/TextWebSocketFrameHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter9/src/test/java/AbsIntegerEncoderTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/other/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +98,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/other/src/main/java/javanoio/netty/fixedLengthFrame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/other/src/main/java/javanoio/netty/webSocket" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -91,24 +112,25 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\software\workspace\netty相关\netty-test\other\src\main\proto" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\workspace\netty相关\netty-test\other\src\main\java\javanoio\netty\webSocket" />
+      <recent name="D:\software\workspace\netty相关\netty-test\other\src\main\java\javanoio\netty\fixedLengthFrame" />
+      <recent name="C:\Program Files\workspace\test\netty-test\chapter12\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="javanoio.netty.coding.protobuf" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\software\workspace\netty相关\netty-test\other\src\main\java\javanoio\netty\fixedLengthFrame" />
-      <recent name="C:\Program Files\workspace\test\netty-test\chapter12\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\software\workspace\netty相关\netty-test\other\src\main\proto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WebSocketServer">
-    <configuration name="EchoServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javanoio.netty.fixedLengthFrame.EchoServer" />
+  <component name="RunManager" selected="Application.NettyClient">
+    <configuration name="FileServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javanoio.netty.file.FileServer" />
       <module name="other" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javanoio.netty.fixedLengthFrame.*" />
+          <option name="PATTERN" value="javanoio.netty.file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpFileServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javanoio.netty.http.HttpFileServer" />
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javanoio.netty.privateAggreement.NettyClient" />
       <module name="other" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javanoio.netty.http.*" />
+          <option name="PATTERN" value="javanoio.netty.privateAggreement.buffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,25 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProtobufTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javanoio.netty.coding.protobuf.ProtobufTest" />
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javanoio.netty.privateAggreement.NettyServer" />
       <module name="other" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javanoio.netty.http.protobuf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebSocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javanoio.netty.webSocket.WebSocketServer" />
-      <module name="other" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javanoio.netty.webSocket.*" />
+          <option name="PATTERN" value="javanoio.netty.privateAggreement.buffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,36 +175,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="protobufTest.testN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NettyClient.runClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="other" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javanoio.netty.http.protobuf.*" />
+          <option name="PATTERN" value="javanoio.netty.privateAggreement.buffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="javanoio.netty.http.protobuf" />
-      <option name="MAIN_CLASS_NAME" value="javanoio.netty.http.protobuf.protobufTest" />
-      <option name="METHOD_NAME" value="testN" />
+      <option name="PACKAGE_NAME" value="javanoio.netty.privateAggreement" />
+      <option name="MAIN_CLASS_NAME" value="javanoio.netty.privateAggreement.NettyClient" />
+      <option name="METHOD_NAME" value="runClient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServer.runServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="other" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javanoio.netty.privateAggreement.buffer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javanoio.netty.privateAggreement" />
+      <option name="MAIN_CLASS_NAME" value="javanoio.netty.privateAggreement.NettyServer" />
+      <option name="METHOD_NAME" value="runServer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.EchoServer (1)" />
-      <item itemvalue="Application.ProtobufTest" />
-      <item itemvalue="Application.HttpFileServer" />
-      <item itemvalue="JUnit.protobufTest.testN" />
-      <item itemvalue="Application.WebSocketServer" />
+      <item itemvalue="Application.FileServer" />
+      <item itemvalue="Application.NettyServer" />
+      <item itemvalue="Application.NettyClient" />
+      <item itemvalue="JUnit.NettyClient.runClient" />
+      <item itemvalue="JUnit.NettyServer.runServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WebSocketServer" />
-        <item itemvalue="Application.HttpFileServer" />
-        <item itemvalue="JUnit.protobufTest.testN" />
-        <item itemvalue="Application.ProtobufTest" />
-        <item itemvalue="Application.EchoServer (1)" />
+        <item itemvalue="Application.NettyClient" />
+        <item itemvalue="Application.NettyServer" />
+        <item itemvalue="JUnit.NettyClient.runClient" />
+        <item itemvalue="JUnit.NettyServer.runServer" />
+        <item itemvalue="Application.FileServer" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +264,11 @@
       <workItem from="1692018768938" duration="5867000" />
       <workItem from="1692192656746" duration="3864000" />
       <workItem from="1692625183603" duration="596000" />
-      <workItem from="1693724805975" duration="4378000" />
+      <workItem from="1693724805975" duration="9434000" />
+      <workItem from="1694523210445" duration="5827000" />
+      <workItem from="1694919067504" duration="8105000" />
+      <workItem from="1694957229008" duration="7228000" />
+      <workItem from="1696132535737" duration="6226000" />
     </task>
     <servers />
   </component>
@@ -271,83 +300,91 @@
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
     <state x="-1549" y="140" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1692020954395" />
-    <state x="-1474" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1693725828329">
+    <state x="-1474" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1696138424629">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state x="-1474" y="42" key="#com.intellij.ide.util.MemberChooser/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693725828329" />
-    <state width="562" height="458" key="DebuggerActiveHint" timestamp="1693729634074">
+    <state x="-1474" y="42" key="#com.intellij.ide.util.MemberChooser/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696138424629" />
+    <state x="-1522" y="41" key="#xdebugger.evaluate" timestamp="1693732277419">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="562" height="458" key="DebuggerActiveHint/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729634074" />
+    <state x="-1522" y="41" key="#xdebugger.evaluate/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693732277419" />
+    <state width="562" height="458" key="DebuggerActiveHint" timestamp="1696138400914">
+      <screen x="-1920" y="0" width="1280" height="688" />
+    </state>
+    <state width="562" height="458" key="DebuggerActiveHint/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696138400914" />
     <state x="-1417" y="102" key="FileChooserDialogImpl" timestamp="1690470265986">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
     <state x="-1417" y="102" key="FileChooserDialogImpl/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1690470265986" />
     <state x="804" y="307" key="FileChooserDialogImpl/-1920.0.1280.688/0.0.2048.1104@0.0.2048.1104" timestamp="1690384136152" />
-    <state width="1222" height="193" key="GridCell.Tab.0.bottom" timestamp="1693729574956">
+    <state width="1222" height="233" key="GridCell.Tab.0.bottom" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.0.bottom/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729574956" />
+    <state width="1222" height="233" key="GridCell.Tab.0.bottom/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
     <state width="2005" height="303" key="GridCell.Tab.0.bottom/-1920.0.1280.688/0.0.2048.1104@0.0.2048.1104" timestamp="1691504857685" />
-    <state width="1222" height="193" key="GridCell.Tab.0.center" timestamp="1693729574956">
+    <state width="1222" height="233" key="GridCell.Tab.0.center" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.0.center/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729574956" />
+    <state width="1222" height="233" key="GridCell.Tab.0.center/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
     <state width="2005" height="303" key="GridCell.Tab.0.center/-1920.0.1280.688/0.0.2048.1104@0.0.2048.1104" timestamp="1691504857685" />
-    <state width="1222" height="193" key="GridCell.Tab.0.left" timestamp="1693729574955">
+    <state width="1222" height="233" key="GridCell.Tab.0.left" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.0.left/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729574955" />
+    <state width="1222" height="233" key="GridCell.Tab.0.left/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
     <state width="2005" height="303" key="GridCell.Tab.0.left/-1920.0.1280.688/0.0.2048.1104@0.0.2048.1104" timestamp="1691504857685" />
-    <state width="1222" height="193" key="GridCell.Tab.0.right" timestamp="1693729574956">
+    <state width="1222" height="233" key="GridCell.Tab.0.right" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.0.right/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729574956" />
+    <state width="1222" height="233" key="GridCell.Tab.0.right/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
     <state width="2005" height="303" key="GridCell.Tab.0.right/-1920.0.1280.688/0.0.2048.1104@0.0.2048.1104" timestamp="1691504857685" />
-    <state width="1222" height="193" key="GridCell.Tab.1.bottom" timestamp="1693729562827">
+    <state width="1222" height="233" key="GridCell.Tab.1.bottom" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.1.bottom/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729562827" />
-    <state width="1222" height="193" key="GridCell.Tab.1.center" timestamp="1693729562827">
+    <state width="1222" height="233" key="GridCell.Tab.1.bottom/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
+    <state width="1222" height="233" key="GridCell.Tab.1.center" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.1.center/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729562827" />
-    <state width="1222" height="193" key="GridCell.Tab.1.left" timestamp="1693729562827">
+    <state width="1222" height="233" key="GridCell.Tab.1.center/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
+    <state width="1222" height="233" key="GridCell.Tab.1.left" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.1.left/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729562827" />
-    <state width="1222" height="193" key="GridCell.Tab.1.right" timestamp="1693729562827">
+    <state width="1222" height="233" key="GridCell.Tab.1.left/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
+    <state width="1222" height="233" key="GridCell.Tab.1.right" timestamp="1696142037628">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state width="1222" height="193" key="GridCell.Tab.1.right/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1693729562827" />
+    <state width="1222" height="233" key="GridCell.Tab.1.right/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696142037628" />
     <state x="809" y="289" width="953" height="779" key="SettingsEditor" timestamp="1692021333273">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state x="809" y="289" width="953" height="779" key="SettingsEditor/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1692021333273" />
-    <state x="-1558" y="78" width="564" height="524" key="StructurePopup" timestamp="1692194199584">
+    <state x="-1558" y="78" width="564" height="524" key="StructurePopup" timestamp="1696138335940">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state x="-1558" y="78" width="564" height="524" key="StructurePopup/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1692194199584" />
-    <state x="-1580" y="71" width="603" height="536" key="find.popup" timestamp="1692024948063">
+    <state x="-1558" y="78" width="564" height="524" key="StructurePopup/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696138335940" />
+    <state x="-1580" y="71" width="603" height="536" key="find.popup" timestamp="1696138170492">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state x="-1580" y="71" width="603" height="536" key="find.popup/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1692024948063" />
+    <state x="-1580" y="71" width="603" height="536" key="find.popup/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696138170492" />
     <state x="-1892" y="0" key="new project wizard" timestamp="1690470111189">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
     <state x="-1892" y="0" key="new project wizard/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1690470111189" />
-    <state x="-1617" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1692022355397">
+    <state x="-1621" y="152" key="run.anything.popup" timestamp="1694962425134">
       <screen x="-1920" y="0" width="1280" height="688" />
     </state>
-    <state x="-1617" y="9" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1692022355397" />
+    <state x="-1621" y="152" key="run.anything.popup/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1694962425134" />
+    <state x="-1617" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1696143282290">
+      <screen x="-1920" y="0" width="1280" height="688" />
+    </state>
+    <state x="-1617" y="9" width="672" height="678" key="search.everywhere.popup/-1920.0.1280.688/0.0.2048.1104@-1920.0.1280.688" timestamp="1696143282290" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/other/src/main/java/javanoio/netty/webSocket/WebSocketServerHandler.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/other/src/main/java/javanoio/netty/udpdemo/ChineseProverbServerHandler.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
